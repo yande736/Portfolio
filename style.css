@@ -550,6 +550,11 @@ section .title::after {
   color: #f7f7f7;
 }
 
+.footer .links a,
+.footer .legal a {
+    cursor: pointer;
+}
+
 footer {
   display: flex;
   align-items: flex-start;
@@ -559,6 +564,7 @@ footer {
 
 footer > img {
   margin-top: 10px;
+  cursor: pointer;
 }
 
 footer {
