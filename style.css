@@ -376,6 +376,9 @@ section .title::after {
 .skills-content .right .js::before {
     width: 60%;
 }
+.skills-content .right .figma::before {
+  width: 75%;
+}
 .skills-content .right .react::before {
     width: 40%;
 }
@@ -565,6 +568,8 @@ footer {
 footer > img {
   margin-top: 10px;
   cursor: pointer;
+  width: 170px;
+  height: 100px;
 }
 
 footer {
@@ -601,7 +606,7 @@ footer h2 {
 }
 
 .legal {
-  font-size: 12px;
+  font-size: 18px;
 }
 
 .legal > a {
@@ -617,9 +622,19 @@ footer.bottom .links {
   gap: 18px;
 }
 
-footer.bottom .links > a {
+footer.bottom .links a {
   font-size: 24px;
+  border: 1px solid white;
+  border-radius: 50%;
+  padding: 1rem;
+  transition: all 0.2s ease;
 }
+
+footer.bottom .links a:hover {
+  text-decoration: none;
+  scale: 0.25;
+}
+
 
 /* responsive media query start */
 @media (max-width: 1104px) {
