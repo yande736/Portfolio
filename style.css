@@ -628,11 +628,12 @@ footer.bottom .links a {
   border-radius: 50%;
   padding: 1rem;
   transition: all 0.2s ease;
+  color: #a2b5cd;
 }
 
 footer.bottom .links a:hover {
   text-decoration: none;
-  scale: 1.25;
+  scale: 1.15;
 }
 
 
