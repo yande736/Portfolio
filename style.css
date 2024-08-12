@@ -187,80 +187,80 @@ section .title::after {
   font-family: "Ubuntu", sans-serif;
 }
 .home .max-width {
-    width: 100%;
-    display: flex;
+  width: 100%;
+  display: flex;
 }
 .home .max-width .row {
-    margin-right: 0;
+  margin-right: 0;
 }
 .home .home-content .text-1 {
-    font-size: 27px;
+  font-size: 27px;
 }
 .home .home-content .text-2 {
-    font-size: 75px;
-    font-weight: 600;
-    margin-left: -3px;
+  font-size: 75px;
+  font-weight: 600;
+  margin-left: -3px;
 }
 .home .home-content .text-3 {
-    font-size: 40px;
-    margin: 5px 0;
+  font-size: 40px;
+  margin: 5px 0;
 }
 .home .home-content .text-3 span {
-    color: var(--text-color);
-    font-weight: 500;
+  color: var(--text-color);
+  font-weight: 500;
 }
 .home .home-content a {
-    font-size: 30px;
-    color: var(--secText-color);
-    padding: 20px 15px;
-    transition: 0.3s ease;
+  font-size: 30px;
+  color: var(--secText-color);
+  padding: 20px 15px;
+  transition: 0.3s ease;
 }
 .home .home-content a:hover {
-  scale: .80;
+  scale: 0.8;
 }
 
 /* about section styling */
 .about .title::after {
-    content: "who i am";
+  content: "who i am";
 }
 .about .about-content .left {
-    width: 45%;
+  width: 45%;
 }
 .about .about-content .left img {
-    height: 400px;
-    width: 400px;
-    object-fit: cover;
-    border-radius: 6px;
+  height: 400px;
+  width: 400px;
+  object-fit: cover;
+  border-radius: 6px;
 }
 .about .about-content .right {
-    width: 55%;
+  width: 55%;
 }
 .about .about-content .right .text {
-    font-size: 25px;
-    font-weight: 600;
-    margin-bottom: 10px;
+  font-size: 25px;
+  font-weight: 600;
+  margin-bottom: 10px;
 }
 .about .about-content .right .text span {
-    color: var(--text-color);
+  color: var(--text-color);
 }
 .about .about-content .right p {
-    text-align: justify;
+  text-align: justify;
 }
 .about .about-content .right a {
-    display: inline-block;
-    background: var(--text-color);
-    color: var(--secText-color);
-    font-size: 20px;
-    font-weight: 500;
-    padding: 10px 30px;
-    margin-top: 20px;
-    border-radius: 6px;
-    border: 2px solid var(--text-color);
-    transition: all 0.3s ease;
+  display: inline-block;
+  background: var(--text-color);
+  color: var(--secText-color);
+  font-size: 20px;
+  font-weight: 500;
+  padding: 10px 30px;
+  margin-top: 20px;
+  border-radius: 6px;
+  border: 2px solid var(--text-color);
+  transition: all 0.3s ease;
 }
 .about .about-content .right a:hover {
-    color: var(--text-color);
-    background: none;
+  color: var(--text-color);
+  background: none;
 }
 
 /* services section styling */
@@ -268,127 +268,130 @@ section .title::after {
 .contact,
 .about,
 .skills {
-    color: var(--secText-color);
-    background: var(--bg-color);
+  color: var(--secText-color);
+  background: var(--bg-color);
 }
 .services .title::before,
 .contact .title::before,
 .about .title::before,
 .skills .title::before {
-    background: var(--secText-color);
+  background: var(--secText-color);
 }
 .services .title::after,
 .contact .title::after,
 .about .title::after,
 .skills .title::after {
-    background: var(--bg-color);
-    content: "what i provide";
+  background: var(--bg-color);
+  content: "what i provide";
 }
 .services .serv-content .card {
-    width: calc(33% - 20px);
-    background: var(--secBg-color);
-    text-align: center;
-    border-radius: 6px;
-    padding: 50px 25px;
-    cursor: pointer;
-    transition: all 0.3s ease;
+  width: calc(33% - 20px);
+  background: var(--secBg-color);
+  text-align: center;
+  border-radius: 6px;
+  padding: 50px 25px;
+  cursor: pointer;
+  transition: all 0.3s ease;
 }
 .services .serv-content .card:hover {
-    background: var(--text-color);
+  background: var(--text-color);
 }
 .services .serv-content .card .box {
-    transition: all 0.3s ease;
-}   
+  transition: all 0.3s ease;
+}
 .services .serv-content .card:hover .box {
-    transform: scale(1.05);
+  transform: scale(1.05);
 }
 .services .serv-content .card i {
-    font-size: 50px;
-    color: var(--text-color);
-    transition: color 0.3s ease;
+  font-size: 50px;
+  color: var(--text-color);
+  transition: color 0.3s ease;
 }
 .services .serv-content .card:hover i {
-    color: var(--secText-color);
+  color: var(--secText-color);
 }
 .services .serv-content .card .text {
-    font-size: 25px;
-    font-weight: 500;
-    margin: 10px 0 7px 0;
+  font-size: 25px;
+  font-weight: 500;
+  margin: 10px 0 7px 0;
 }
 
 /* skills section styling */
 
 .skills .title::after {
-    content: "what i know";
+  content: "what i know";
 }
 .skills .skills-content .column {
-    width: calc(50% - 30px);
+  width: calc(50% - 30px);
 }
 .skills .skills-content .left .text {
-    font-size: 20px;
-    font-weight: 600;
-    margin-bottom: 10px;
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 10px;
 }
 .skills .skills-content .left p {
-    text-align: justify;
+  text-align: justify;
 }
 .skills .skills-content .left a {
-    display: inline-block;
-    background: var(--text-color);
-    color: var(--secText-color);
-    font-size: 18px;
-    font-weight: 500;
-    padding: 8px 16px;
-    margin-top: 20px;
-    border-radius: 6px;
-    border: 2px solid var(--text-color);
-    transition: all 0.3s ease;
+  display: inline-block;
+  background: var(--text-color);
+  color: var(--secText-color);
+  font-size: 18px;
+  font-weight: 500;
+  padding: 8px 16px;
+  margin-top: 20px;
+  border-radius: 6px;
+  border: 2px solid var(--text-color);
+  transition: all 0.3s ease;
 }
 .skills .skills-content .left a:hover {
-    color: var(--text-color);
-    background: none;
+  color: var(--text-color);
+  background: none;
 }
 .skills .skills-content .right .bars {
-    margin-bottom: 15px;
+  margin-bottom: 30px;
 }
 .skills .skills-content .right .info {
-    display: flex;
-    margin-bottom: 5px;
-    align-items: center;
-    justify-content: space-between;
+  display: flex;
+  margin-bottom: 5px;
+  align-items: center;
+  justify-content: space-between;
 }
 .skills .skills-content .right span {
-    font-weight: 500;
-    font-size: 18px;
+  font-weight: 500;
+  font-size: 18px;
 }
 .skills .skills-content .right .line {
-    height: 5px;
-    width: 100%;
-    background: lightgrey;
-    position: relative;
+  height: 5px;
+  width: 100%;
+  background: lightgrey;
+  position: relative;
 }
 .skills .skills-content .right .line::before {
-    content: "";
-    position: absolute;
-    height: 100%;
-    left: 0;
-    top: 0;
-    background: var(--text-color);
+  content: "";
+  position: absolute;
+  height: 100%;
+  left: 0;
+  top: 0;
+  background: var(--text-color);
 }
 .skills-content .right .html::before {
-    width: 90%;
+  width: 90%;
 }
 .skills-content .right .css::before {
-    width: 60%;
+  width: 70%;
 }
 .skills-content .right .js::before {
-    width: 60%;
+  width: 60%;
 }
 .skills-content .right .figma::before {
-  width: 75%;
+  width: 70%;
 }
-.skills-content .right .react::before {
-    width: 40%;
+.skills-content .right .php::before {
+  width: 50%;
+}
+.skills-content .right .laravel::before {
+  width: 40%;
 }
 
 /* contact section styling */
@@ -486,101 +489,57 @@ section .title::after {
   color: var(--text-color);
   background: none;
 }
+
 /* footer section styling */
 .footer {
   position: relative;
-  left: 0;
-  bottom: 0px;
   width: 100%;
-  height: 100vh;
+  height: 500px;
   background: #172940;
   padding-top: 100px;
   color: #f7f7f7;
 }
 
-.footer .links a,
-.footer .legal a {
-    cursor: pointer;
+.footer a {
+  cursor: pointer;
+  color: #f7f7f7;
 }
 
-footer {
+.links {
   display: flex;
-  align-items: flex-start;
+  flex-direction: row;
+}
+
+.links a {
+  display: flex;
+  flex-direction: column;
+  margin-right: 60px;
+}
+
+.top {
+  display: flex;
+  align-items: center;
+
   gap: 40px;
   margin: 0 30px;
 }
 
-footer > img {
+.top > img {
   margin-top: 10px;
   cursor: pointer;
-  width: 170px;
-  height: 100px;
+  width: 180px;
+  height: 180px;
 }
 
 footer {
   color: #a2b5cd;
 }
 
-footer.top {
-  border-bottom: 2px solid #3a4f6a;
-  padding-bottom: 20px;
+.footer span {
+  position: absolute;
+  bottom: 100px;
+  left: 100px;
 }
-
-footer.bottom {
-  padding: 20px 0;
-  justify-content: space-between;
-}
-
-footer.top .links {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 30px;
-}
-
-.links > div {
-  display: grid;
-  gap: 10px;
-  margin-bottom: 30px;
-}
-
-footer h2 {
-  margin: 0;
-  font-size: 16px;
-  font-weight: 400;
-  color: #f7f7f7;
-}
-
-.legal {
-  font-size: 18px;
-}
-
-.legal > a {
-  margin: 0 4px;
-}
-
-.legal > span {
-  margin-right: 10px;
-}
-
-footer.bottom .links {
-  display: flex;
-  gap: 18px;
-}
-
-footer.bottom .links a {
-  font-size: 24px;
-  border: 1px solid var(--secText-color);
-  border-radius: 50%;
-  padding: 1rem;
-  transition: all 0.2s ease;
-  color: #a2b5cd;
-}
-
-footer.bottom .links a:hover {
-  text-decoration: none;
-  scale: 1.15;
-}
-
 
 /* responsive media query start */
 @media (max-width: 1104px) {
@@ -719,26 +678,26 @@ footer.bottom .links a:hover {
     width: 35px;
     font-size: 23px;
     line-height: 38px;
-}
-.footer {
+  }
+  .footer {
     height: 100%;
-}
-footer {
+  }
+  footer {
     text-align: center;
     align-items: center;
-}
+  }
 
-footer.top .links {
+  footer.top .links {
     grid-template-columns: 1fr;
-}
+  }
 
-footer.bottom {
+  footer.bottom {
     align-items: center;
-}
+  }
 
-.legal > span {
+  .legal > span {
     display: block;
     margin-right: 0;
     margin-bottom: 2px;
-}
+  }
 }
