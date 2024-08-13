@@ -45,9 +45,8 @@ section {
 .about,
 .services,
 .skills,
-.teams,
 .contact,
-footer {
+.footer {
   font-family: "Poppins", sans-serif;
 }
 .about .about-content,
@@ -177,7 +176,6 @@ section .title::after {
 .home {
   display: flex;
   background: url("images/banner2.jpg") no-repeat center;
-  /* filter: brightness(60%); */
   height: 100vh;
   width: 100%;
   color: var(--secText-color);
@@ -491,54 +489,175 @@ section .title::after {
 }
 
 /* footer section styling */
-.footer {
-  position: relative;
+footer {
+  background: var(--secBg-color);
   width: 100%;
-  height: 500px;
-  background: #172940;
-  padding-top: 100px;
-  color: #f7f7f7;
 }
-
-.footer a {
-  cursor: pointer;
-  color: #f7f7f7;
+footer::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 100px;
+  height: 1px;
+  width: 100%;
+  background: #afafb6;
 }
-
-.links {
-  display: flex;
-  flex-direction: row;
+footer .content {
+  max-width: 1250px;
+  margin: auto;
+  padding: 30px 40px 40px 40px;
 }
-
-.links a {
-  display: flex;
-  flex-direction: column;
-  margin-right: 60px;
-}
-
-.top {
+footer .content .top {
   display: flex;
   align-items: center;
-
-  gap: 40px;
-  margin: 0 30px;
+  justify-content: space-between;
+  margin-bottom: 50px;
 }
-
-.top > img {
-  margin-top: 10px;
-  cursor: pointer;
-  width: 180px;
-  height: 180px;
+.content .top .logo-details {
+  color: var(--secText-color);
+  font-size: 30px;
 }
-
-footer {
-  color: #a2b5cd;
+.content .top .media-icons {
+  display: flex;
 }
-
-.footer span {
+.content .top .media-icons a {
+  height: 40px;
+  width: 40px;
+  margin: 0 8px;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 40px;
+  color: #fff;
+  font-size: 17px;
+  text-decoration: none;
+  transition: all 0.4s ease;
+}
+.top .media-icons a:nth-child(1) {
+  background: #4267b2;
+}
+.top .media-icons a:nth-child(1):hover {
+  color: #4267b2;
+  background: #fff;
+}
+.top .media-icons a:nth-child(2) {
+  background: #e1306c;
+}
+.top .media-icons a:nth-child(2):hover {
+  color: #e1306c;
+  background: #fff;
+}
+.top .media-icons a:nth-child(3) {
+  background: #0077b5;
+}
+.top .media-icons a:nth-child(3):hover {
+  color: #0077b5;
+  background: #fff;
+}
+.top .media-icons a:nth-child(4) {
+  background: #161b22;
+}
+.top .media-icons a:nth-child(4):hover {
+  color: #161b22;
+  background: #fff;
+}
+footer .content .link-boxes {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+footer .content .link-boxes .box {
+  width: calc(100% / 5 - 10px);
+}
+.content .link-boxes .box .link_name {
+  color: #fff;
+  font-size: 18px;
+  font-weight: 400;
+  margin-bottom: 10px;
+  position: relative;
+}
+.link-boxes .box .link_name::before {
+  content: "";
   position: absolute;
-  bottom: 100px;
-  left: 100px;
+  left: 0;
+  bottom: -2px;
+  height: 2px;
+  width: 35px;
+  background: #fff;
+}
+.content .link-boxes .box li {
+  margin: 6px 0;
+  list-style: none;
+}
+.content .link-boxes .box li a {
+  color: #fff;
+  font-size: 14px;
+  font-weight: 400;
+  text-decoration: none;
+  opacity: 0.8;
+  transition: all 0.4s ease;
+}
+.content .link-boxes .box li a:hover {
+  opacity: 1;
+  text-decoration: underline;
+}
+.content .link-boxes .input-box {
+  margin-right: 55px;
+}
+.link-boxes .input-box input {
+  height: 40px;
+  width: calc(100% + 55px);
+  outline: none;
+  border: 2px solid #afafb6;
+  background: var(--bg-color);
+  border-radius: 4px;
+  padding: 0 15px;
+  font-size: 15px;
+  color: #fff;
+  margin-top: 5px;
+}
+.link-boxes .input-box input::placeholder {
+  color: #afafb6;
+  font-size: 16px;
+}
+.link-boxes .input-box input[type="button"] {
+  background: #fff;
+  color: #140b5c;
+  border: none;
+  font-size: 18px;
+  font-weight: 500;
+  margin: 4px 0;
+  opacity: 0.8;
+  cursor: pointer;
+  transition: all 0.4s ease;
+}
+.input-box input[type="button"]:hover {
+  opacity: 1;
+}
+footer .bottom-details {
+  width: 100%;
+  background: var(--bg-color);
+}
+footer .bottom-details .bottom_text {
+  max-width: 1250px;
+  margin: auto;
+  padding: 20px 40px;
+  display: flex;
+  justify-content: space-between;
+}
+.bottom-details .bottom_text span,
+.bottom-details .bottom_text a {
+  font-size: 14px;
+  font-weight: 300;
+  color: #fff;
+  opacity: 0.8;
+  text-decoration: none;
+}
+.bottom-details .bottom_text a:hover {
+  opacity: 1;
+  text-decoration: underline;
+}
+.bottom-details .bottom_text a {
+  margin-right: 10px;
 }
 
 /* responsive media query start */
@@ -617,6 +736,13 @@ footer {
     width: 100%;
     margin-bottom: 35px;
   }
+  footer .content .link-boxes {
+    flex-wrap: wrap;
+  }
+  footer .content .link-boxes .input-box {
+    width: 40%;
+    margin-top: 10px;
+  }
 }
 
 @media (max-width: 690px) {
@@ -636,17 +762,27 @@ footer {
   .services .serv-content .card {
     width: 100%;
   }
-
   footer {
-    flex-direction: column;
-    margin: 0 auto;
-    max-width: 600px;
-    padding: 0;
+    position: relative;
   }
-
-  footer.bottom {
-    gap: 16px;
-    flex-direction: column-reverse;
+  .content .top .logo-details {
+    font-size: 26px;
+  }
+  .content .top .media-icons a {
+    height: 35px;
+    width: 35px;
+    font-size: 14px;
+    line-height: 35px;
+  }
+  footer .content .link-boxes .box {
+    width: calc(100% / 3 - 10px);
+  }
+  footer .content .link-boxes .input-box {
+    width: 60%;
+  }
+  .bottom-details .bottom_text span,
+  .bottom-details .bottom_text a {
+    font-size: 12px;
   }
 }
 
@@ -679,25 +815,19 @@ footer {
     font-size: 23px;
     line-height: 38px;
   }
-  .footer {
-    height: 100%;
+  footer::before {
+    top: 145px;
   }
-  footer {
-    text-align: center;
-    align-items: center;
+  footer .content .top {
+    flex-direction: column;
   }
-
-  footer.top .links {
-    grid-template-columns: 1fr;
+  .content .top .media-icons {
+    margin-top: 16px;
   }
-
-  footer.bottom {
-    align-items: center;
+  footer .content .link-boxes .box {
+    width: calc(100% / 2 - 10px);
   }
-
-  .legal > span {
-    display: block;
-    margin-right: 0;
-    margin-bottom: 2px;
+  footer .content .link-boxes .input-box {
+    width: 100%;
   }
 }
